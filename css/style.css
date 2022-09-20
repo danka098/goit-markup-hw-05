@@ -277,6 +277,7 @@ h5 {
 	align-items: center;
 	width: 44px;
 	height: 44px;
+	border-radius: 50%;
 	cursor: pointer;
 	transition-property: background-color;
 	transition-duration: 250ms;
@@ -289,7 +290,6 @@ h5 {
 .team__social-link:hover,
 .team__social-link:focus {
 	background-color: var(--active-elements-color);
-	border-radius: 50%;
 }
 .team__social-icon {
 	fill: var(--icon-color);
