@@ -426,13 +426,16 @@ h5 {
 	gap: 30px;
 	position: relative;
 	overflow: hidden;
+	transition-property: box-shadow;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects__img {
 	position: relative;
 }
 .projects__img-description {
 	position: absolute;
-	bottom: -294px;
+	bottom: -184px;
 	left: 0;
 	width: 100%;
 	height: 294px;
@@ -453,10 +456,13 @@ h5 {
 	margin-right: 45px;
 }
 .projects__item:hover .projects__img-description {
-	transform: translateY(-404px);
+	transform: translateY(-294px);
 }
 .projects__caption {
+	position: relative;
+	background-color: #fff;
 	border: 1px solid #eeeeee;
+	z-index: 1;
 }
 .projects__name {
 	font-weight: 700;
@@ -480,7 +486,7 @@ h5 {
 	left: 0;
 	background-color: rgba(0, 0, 0, 0.2);
 	opacity: 1;
-	transition-property: opacity;
+	transition-property: opacity, visibility;
 	transition-duration: 1000ms;
 }
 .modal {
